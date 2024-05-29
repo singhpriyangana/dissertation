@@ -21,3 +21,31 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         errorMessage.textContent = 'Invalid username or password.';
     }
 });
+function toggleMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+
+    const backgroundImage = document.querySelector('.background-image');
+    const modeIcon = document.getElementById('toggleModeIcon').firstElementChild;
+    if (body.classList.contains('dark-mode')) {
+        backgroundImage.classList.remove('light-mode-bg');
+        backgroundImage.classList.add('dark-mode-bg');
+        modeIcon.classList.remove('fa-moon');
+        modeIcon.classList.add('fa-sun');
+    } else {
+        backgroundImage.classList.remove('dark-mode-bg');
+        backgroundImage.classList.add('light-mode-bg');
+        modeIcon.classList.remove('fa-sun');
+        modeIcon.classList.add('fa-moon');
+    }
+}
+
+function toggleSearchBar() {
+    const searchBar = document.getElementById('searchBar');
+    if (searchBar.style.display === 'none' || searchBar.style.display === '') {
+        searchBar.style.display = 'flex';
+    } else {
+        searchBar.style.display = 'none';
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - This Bank</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header>
+        <nav class="navbar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-yellow">Personal</button>
+                <button type="button" class="btn btn-yellow">NRI</button>
+                <button type="button" class="btn btn-yellow">Business</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-yellow dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Country
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">India</a></li>
+                    <li><a class="dropdown-item" href="#">Russia</a></li>
+                    <li><a class="dropdown-item" href="#">America</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <div id="searchBar" class="search-bar" style="display: none;">
+            <input type="text" placeholder="Looking for something specific?">
+        </div>
+    </header>
+    
+    <!-- Accounts Section -->
+    <section class="accounts-section">
+        <div class="btn-group">
+            <button type="button" class="btn btn-account dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Accounts
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="account1.html">Saving account</a></li>
+                <li><a class="dropdown-item" href="account2.html">Current account</a></li>
+                <li><a class="dropdown-item" href="account3.html">Salary account</a></li>
+                <li class="additional-list-item">
+                    <a href="open-saving-account.html">Open Saving Account Digitally</a>
+                </li>
+                <li class="additional-list-item">
+                    <div class="additional-links-sub">
+                        <a href="application-form.html">Application Form</a> | 
+                        <a href="faqs.html">FAQs</a> | 
+                        <a href="contact-us.html">Contact Us</a>
+                    </div>
+                </li>
+               </ul>
+               <div class="btn-group">
+                <button type="button" class="btn btn-loan dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Loan
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="vehicle-loan.html">Vehicle Loan</a></li>
+                    <li><a class="dropdown-item" href="education-loan.html">Education Loan</a></li>
+                    <li><a class="dropdown-item" href="home-loan.html">Home Loan</a></li>
+                </ul>
+            </div> 
+            <div class="btn-group">
+                <button type="button" class="btn btn-loan dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Insurance
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="vehicle-loan.html">Life Insurance</a></li>
+                    <li><a class="dropdown-item" href="education-loan.html">Health Insurance</a></li>
+                    <li><a class="dropdown-item" href="home-loan.html">Simple Insurance</a></li>
+                </ul>
+            </div> 
+            <div class="btn-group">
+                <button type="button" class="btn btn-loan dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Digital Products
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="vehicle-loan.html">Instant Banking</a></li>
+                    <li><a class="dropdown-item" href="education-loan.html">Cards</a></li>
+                    <li><a class="dropdown-item" href="home-loan.html">Payments Solution</a></li>
+                </ul>
+            </div> 
+            <button class="mode-toggle" onclick="toggleMode()"></button>
+            <a href="#" id="searchIcon" onclick="toggleSearchBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M10,2A8,8,0,1,0,18,10,8.00918,8.00918,0,0,0,10,2Zm0,14A6,6,0,1,1,16,10,6.00657,6.00657,0,0,1,10,16Zm11.707,4.293L16.414,15.586A8.02883,8.02883,0,0,0,14.586,17.414l5.293,5.293a1,1,0,1,0,1.414-1.414Z"/></svg>
+            </a>
+            
+        </nav>
+        <div id="searchBar" class="search-bar" style="display: none;">
+            <input type="text" placeholder="Looking for something specific?">
+        </div>
+        </div>
+        <section class="advertisement-section">
+            <div class="advertisement-content">
+                <h2>Advertisement</h2>
+                <p>Your ad content goes here. This is a placeholder for advertisements.</p>
+                <img src="voting.webp" alt="Image" class="header-image">
+            </div>
+        </section>
+        
+        <div class="background-image light-mode-bg"></div>
+       
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
